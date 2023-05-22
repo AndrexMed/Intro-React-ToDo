@@ -15,7 +15,7 @@ function TodoCounter({total, completed}) { //Con las llaves estamos "Destructura
       // </h1>
 
        <h1 className='TodoCounter'>
-        Haz completado <span>{completed}</span> de <span>{total} </span>ToDos
+        Haz completado <span>{completed}</span> de <span>{total} </span>To Do's
       </h1>
     );
   }

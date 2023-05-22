@@ -4,10 +4,12 @@ body {
   background: #F2F4F5;
   color: #1E1E1F;
   font-family: cursive;
+  background: radial-gradient(circle, rgba(240, 240, 240, 0.9), rgba(230, 230, 230, 0.7), rgba(220, 220, 220, 0.5), rgba(210, 210, 210, 0.3), rgba(200, 200, 200, 0.1));
 }
 
 #root{
   margin: 0 24px;
   position: relative;
   min-height: 100vh;
+  
 }

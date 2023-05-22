@@ -9,7 +9,7 @@ import { CreateTodoButton } from './Components/CreateTodoButton/CreateTodoButton
 
 //Creamos un array con datos de ejemplos para renderizarlos con map...
 const defaultToDos = [
-  { text: 'Terminar curso React', completed: false },
+  { text: 'Terminar curso React', completed: true },
   { text: 'Lavar cocina', completed: false },
   { text: 'Estudiar', completed: false },
   { text: 'Hacer ejercicio', completed: false },
@@ -22,7 +22,7 @@ function App() { //El codigo dentro de este componente es lenguaje JSX, forma de
     //Reemplazamos el div para cambiarlo por el Fragment, "etiqueta invisible"
     // React Fragment es un componente especial en React que se utiliza como un contenedor liviano para envolver múltiples elementos JSX sin agregar nodos adicionales al DOM. 
 
-    <> //Abreviacion de Reac.Fragment
+     <>
 
       {/* Creamos la estructura de los componentes de la app */}
 

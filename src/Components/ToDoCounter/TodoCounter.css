@@ -1,4 +1,4 @@
-h1 {
+/* h1 {
     font-size: 24px;
     text-align: center;
     margin: 0;
@@ -7,4 +7,23 @@ h1 {
   }
   .TodoCounter span{
     font-weight: bold;
+  } */
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding: 24px;
+    font-weight: normal;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #AAAAAA;
+    margin-bottom: 1%;
   }
+  
+  .TodoCounter span {
+    font-weight: bold;
+    color: #133333;
+  }
+  
