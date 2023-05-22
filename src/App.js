@@ -34,10 +34,10 @@ function App() { //El codigo dentro de este componente es lenguaje JSX, forma de
       {/* El "key", es una clave que React me obliga a colocar para diferenciar cada item del array, ej: id:1, id:2.... 
           en este caso lo diferenciamos con el text..y text&completed, son los props que estoy enviando...
           en este  caso le envio los items extraidos del array...*/}
-          
+
       <TodoList>
-        {defaultToDos.map(todo => (
-          <TodoItem key={todo.text}
+        {defaultToDos.map((todo, index) => (
+          <TodoItem key={index}
             text={todo.text}
             completed={todo.completed}
           />
