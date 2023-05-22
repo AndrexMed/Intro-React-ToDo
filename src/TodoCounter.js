@@ -3,7 +3,7 @@
 function TodoCounter({total, completed}) { //Con las llaves estamos "Destructurando"
     return (
       <h1>
-        Haz completado {completed} de {total} todos
+        Haz completado {completed} de {total} ToDos
       </h1>
     );
   }
