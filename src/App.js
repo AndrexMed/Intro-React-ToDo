@@ -1,11 +1,11 @@
-import logo from './platzi.webp';
-import './App.css';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './CreateTodoButton';
 import React from 'react'; //Importamos esto para poder usar Reac.Fragment
+//Borramos lo que no se esta utilizando...
+import { TodoCounter } from './Components/ToDoCounter/TodoCounter';
+import { TodoSearch } from './Components/ToDoSearch/TodoSearch';
+import { TodoList } from './Components/ToDoList/TodoList';
+import { TodoItem } from './Components/ToDoItem/TodoItem';
+import { CreateTodoButton } from './Components/CreateTodoButton/CreateTodoButton';
+
 
 //Creamos un array con datos de ejemplos para renderizarlos con map...
 const defaultToDos = [
@@ -22,7 +22,7 @@ function App() { //El codigo dentro de este componente es lenguaje JSX, forma de
     //Reemplazamos el div para cambiarlo por el Fragment, "etiqueta invisible"
     // React Fragment es un componente especial en React que se utiliza como un contenedor liviano para envolver múltiples elementos JSX sin agregar nodos adicionales al DOM. 
 
-    <React.Fragment>
+    <> //Abreviacion de Reac.Fragment
 
       {/* Creamos la estructura de los componentes de la app */}
 
@@ -45,7 +45,7 @@ function App() { //El codigo dentro de este componente es lenguaje JSX, forma de
       </TodoList>
 
       <CreateTodoButton />
-    </React.Fragment>
+    </>
   );
 }
 export default App;
