@@ -1,4 +1,5 @@
 .TodoItem {
+    width: 90%;
     background-color: #FAFAFA;
     position: relative;
     display: flex;

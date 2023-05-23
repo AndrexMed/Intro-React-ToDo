@@ -13,21 +13,30 @@ const defaultToDos = [
   { text: 'Lavar cocina', completed: false },
   { text: 'Estudiar', completed: false },
   { text: 'Hacer ejercicio', completed: false },
-
+  { text: 'Usar estados derivados', completed: true },
 
 ]
 
 function App() { //El codigo dentro de este componente es lenguaje JSX, forma de escribir html&JS
+
+  const [todos, setTodos] = React.useState(defaultToDos);
+  const [searchValue, setSearchValue] = React.useState('');
+
+  const completedToDos = todos.filter(items => !!items.completed).length
+  const totalToDos = todos.length; 
+
+  console.log("Los usuarios buscan toDos de: " + searchValue)
+
   return (
-    //Reemplazamos el div para cambiarlo por el Fragment, "etiqueta invisible"
-    // React Fragment es un componente especial en React que se utiliza como un contenedor liviano para envolver múltiples elementos JSX sin agregar nodos adicionales al DOM. 
+    <>
 
-     <>
-
-      {/* Creamos la estructura de los componentes de la app */}
-
-      <TodoCounter completed={5} total={10} />  {/*completed y total son los "props que estamos enviando"*/}
-      <TodoSearch />
+      <TodoCounter
+        completed={completedToDos}
+        total={totalToDos} />
+      <TodoSearch
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+      />
 
       {/* Utilizamos el metodo map para renderizar cada item del array... */}
 

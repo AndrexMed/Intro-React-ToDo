@@ -1,15 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  background: #F2F4F5;
+  background: radial-gradient(circle, rgba(240, 240, 240, 0.9), rgba(230, 230, 230, 0.7), rgba(220, 220, 220, 0.5), rgba(210, 210, 210, 0.3), rgba(200, 200, 200, 0.1));
   color: #1E1E1F;
   font-family: cursive;
-  background: radial-gradient(circle, rgba(240, 240, 240, 0.9), rgba(230, 230, 230, 0.7), rgba(220, 220, 220, 0.5), rgba(210, 210, 210, 0.3), rgba(200, 200, 200, 0.1));
+  display: grid;
+  place-items: center;
 }
 
 #root{
-  margin: 0 24px;
+  margin: 1% 0;
   position: relative;
   min-height: 100vh;
-  
+  width: 70%;
 }
